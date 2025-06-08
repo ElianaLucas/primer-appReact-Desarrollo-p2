@@ -1,0 +1,15 @@
+{
+  "short_name": "React Project",
+  "name": "Tarea ejercicios con react",
+  "icons": [
+    {
+      "src": "LANZAGUIZANTES ELVIS.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

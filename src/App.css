@@ -1,0 +1,47 @@
+/* src/App.css */
+
+.app {
+  padding: 2rem;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.components-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.component {
+  border: 1px solid #ccc;
+  padding: 1.5rem;
+  border-radius: 12px;
+  width: 300px;
+  background-color: #f9f9f9;
+}
+
+button {
+  margin: 5px;
+  padding: 10px 15px;
+  border: none;
+  background-color: #1976d2;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #125ea3;
+}
+
+.selected {
+  background-color: #4caf50;
+}
+
+input[type="text"], input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}

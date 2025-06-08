@@ -1,0 +1,133 @@
+/* GlobalStyles.css */
+
+/* Reset general */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fondo cálido y texto oscuro */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #fff8f0; /* tono cálido claro */
+  color: #4a2e2e;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Títulos en tonos cálidos oscuros */
+h1, h2, h3 {
+  color: #7a3e3e;
+  margin-bottom: 15px;
+}
+
+/* Contenedor general para los juegos */
+.app {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Menú superior */
+.navbar {
+  background-color: #ffe0b2; /* tono melocotón */
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+}
+
+.navbar button {
+  background-color: transparent;
+  border: 2px solid transparent;
+  padding: 10px 16px;
+  font-size: 1rem;
+  color: #5c3b1e;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.navbar button:hover,
+.navbar button.selected {
+  background-color: #ffcc80; /* sombreado naranja claro */
+  border-color: #e65100;
+  box-shadow: 0 2px 6px rgba(230, 81, 0, 0.4);
+}
+
+/* Inputs y botones */
+input, select, button {
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  border: 1px solid #d7a86e;
+  border-radius: 6px;
+  width: 100%;
+  max-width: 300px;
+  display: block;
+}
+
+/* Botones normales */
+button {
+  background-color: #f4a261;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  background-color: #e76f51;
+}
+
+button:disabled {
+  background-color: #d3b8a1;
+  cursor: not-allowed;
+}
+
+/* Componente individual */
+.component {
+  background-color: #fff3e0;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Resultados y texto */
+.result {
+  font-weight: bold;
+  margin-top: 10px;
+  color: #8e3b3b;
+}
+
+/* Lista */
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+li {
+  background: #ffebd6;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Botones seleccionados */
+button.selected {
+  background-color: #fdd9a0;
+  box-shadow: 0 0 10px rgba(255, 145, 0, 0.3);
+  font-weight: bold;
+}
+
+/* Responsive layout for grid */
+.components-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+}
